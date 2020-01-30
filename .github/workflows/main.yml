@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  codepen_sync_job:
+    runs-on: ubuntu-latest
+    name: Sync the Hungry Shark pen on Codepen to this repo
+    steps:
+    - name: Codepen sync action step
+      id: codepen-sync
+      uses: actions/codepen-sync-action@v1
+      with:
+        codepen-id: 'dyPddMW'
+    - name: Get the output time
+      run: echo "The time was ${{ steps.hello.outputs.time }}"
