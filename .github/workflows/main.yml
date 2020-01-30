@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Codepen sync action step
       id: codepen-sync
-      uses: actions/codepen-sync-action@v1
+      uses: actions/codepen-sync-action@v0.0.1
       with:
         codepen-id: 'dyPddMW'
     - name: Get the output time
